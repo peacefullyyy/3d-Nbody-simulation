@@ -1,0 +1,93 @@
+## 🇬🇧 **English description**
+
+```markdown
+# 🌌 3D N-Body Gravity Simulator
+
+Interactive 3D simulation of gravitational interactions with eternal planetary trails.
+The project demonstrates object motion in a solar system using 4th-order Runge-Kutta integration.
+
+## 🌟 Features
+
+- **N-body gravity** — all bodies interact with each other
+- **Accurate integration** — Runge-Kutta 4th order (RK4)
+- **Eternal trails** — unlimited length trails for planets
+- **3D camera** — rotation, zoom, auto-rotation
+- **Starry background** — 2000 twinkling stars with parallax
+- **Asteroid belt** — 20 asteroids for visual enhancement
+- **Time control** — speed up/slow down in real-time
+
+## 🎮 Controls
+
+| Key | Action |
+|-----|--------|
+| `← → ↑ ↓` | Rotate camera |
+| `+ / -` | Zoom in/out |
+| `R` | Toggle auto-rotation |
+| `O` | Toggle trails |
+| `C` | Clear all trails (start over) |
+| `Space` | Pause/Resume |
+| `[` | Slow down time |
+| `]` | Speed up time |
+| `ESC` | Exit |
+
+## 🚀 Installation
+
+```bash
+# Clone repository
+git clone https://github.com/peacefullyyy/3d-Nbody-simulation.git
+cd 3d-Nbody-simulation
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run
+python main.py
+📦 Dependencies
+Python 3.8+
+
+Pygame 2.0+
+
+NumPy 1.19+
+
+🔧 Configuration
+All simulation parameters in src/config.py:
+
+python
+G = 1.0              # Gravitational constant
+SUN_MASS = 1000.0    # Sun mass
+DT = 0.005           # Time step
+🛠️ Technical Details
+Integration: RK4 (Runge-Kutta 4th order)
+
+Gravity: Newton's law of universal gravitation
+
+Projection: Perspective 3D
+
+Optimization: Trail projection caching
+
+Trails: Unlimited length (eternal)
+
+📁 Project Structure
+text
+3d-Nbody-simulation/
+├── main.py              # Entry point
+├── src/
+│   ├── __init__.py      # Package init
+│   ├── body.py          # Body class
+│   ├── simulation.py    # Physics engine (RK4)
+│   ├── renderer.py      # 3D rendering
+│   └── config.py        # Configuration
+├── requirements.txt     # Dependencies
+├── README.md           # Description
+└── LICENSE             # MIT License
+📸 Screenshots
+Add your screenshots after running
+
+📄 License
+MIT License — free to use, modify and distribute.
+
+🤝 Contributing
+Pull requests are welcome! For major changes, open an issue first.
+
+⭐ Support
+Star the project on GitHub if you like it!
